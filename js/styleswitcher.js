@@ -33,29 +33,31 @@ var codecanyon = $('#codecanyon');
 var graphicriver = $('#graphicriver');
 var themeforest = $('#themeforest');
 var photodune = $('#photodune');
-$('#is_dark').on('click', function() {
-	if (docean.length) {
-		document.getElementById('3docean').src='img/logos-slider/3docean-dark-background.png';
-	}
-	if (activeden.length) {
-		document.getElementById('activeden').src='img/logos-slider/activeden-dark-background.png';
-	}
-	if (audiojungle.length) {
-		document.getElementById('audiojungle').src='img/logos-slider/audiojungle-dark-background.png';
-	}
-	if (codecanyon.length) {
-		document.getElementById('codecanyon').src='img/logos-slider/codecanyon-dark-background.png';
-	}
-	if (graphicriver.length) {
-		document.getElementById('graphicriver').src='img/logos-slider/graphicriver-dark-background.png';
-	}
-	if (photodune.length) {
-		document.getElementById('photodune').src='img/logos-slider/photodune-dark-background.png';
-	}
-	if (themeforest.length) {
-		document.getElementById('themeforest').src='img/logos-slider/themeforest-dark-background.png';
-	}
-});
+
+// $('#is_dark').on('click', function() {
+// 	if (docean.length) {
+// 		document.getElementById('3docean').src='img/logos-slider/3docean-dark-background.png';
+// 	}
+// 	if (activeden.length) {
+// 		document.getElementById('activeden').src='img/logos-slider/activeden-dark-background.png';
+// 	}
+// 	if (audiojungle.length) {
+// 		document.getElementById('audiojungle').src='img/logos-slider/audiojungle-dark-background.png';
+// 	}
+// 	if (codecanyon.length) {
+// 		document.getElementById('codecanyon').src='img/logos-slider/codecanyon-dark-background.png';
+// 	}
+// 	if (graphicriver.length) {
+// 		document.getElementById('graphicriver').src='img/logos-slider/graphicriver-dark-background.png';
+// 	}
+// 	if (photodune.length) {
+// 		document.getElementById('photodune').src='img/logos-slider/photodune-dark-background.png';
+// 	}
+// 	if (themeforest.length) {
+// 		document.getElementById('themeforest').src='img/logos-slider/themeforest-dark-background.png';
+// 	}
+// });
+
 $('#is_light').on('click', function() {
 	if (docean.length) {
 		document.getElementById('3docean').src='img/logos-slider/3docean-light-background.png';
@@ -80,6 +82,7 @@ $('#is_light').on('click', function() {
 	}
 });
 
+/*
 function setActiveStyleSheet(title) {
 	var i, a, main;
 	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
@@ -97,7 +100,9 @@ function setActiveStyleSheet(title) {
 		jQuery("#is_dark").trigger('click');
 		jQuery("a.logo img").attr('src', 'assets/images/logo_dark.png');
 	}
+	
 }
+*/
 
 function getActiveStyleSheet() {
 	var i, a;
@@ -168,13 +173,13 @@ window.onload = function(e) {
 		jQuery("#showSwitcher").trigger('click');
 	}
 
-	// DARK OR LIGHT
-	var is_dark = readCookie('is_dark');
-	if(is_boxed == 'true') {
-		jQuery('body').removeClass('dark');
-		jQuery('body').addClass('dark');
-		jQuery("#is_dark").trigger('click');
-	}
+	// // DARK OR LIGHT
+	// var is_dark = readCookie('is_dark');
+	// if(is_boxed == 'true') {
+	// 	jQuery('body').removeClass('dark');
+	// 	jQuery('body').addClass('dark');
+	// 	jQuery("#is_dark").trigger('click');
+	// }
 
 	// BOXED or WIDE
 	var is_boxed = readCookie('is_boxed');
@@ -190,19 +195,19 @@ window.onload = function(e) {
 /**
 	COLOR SKIN [light|dark]
 **/
-jQuery("input.dark_switch").bind("click", function() {
-	var boxed_switch = jQuery(this).attr('value');
+// jQuery("input.dark_switch").bind("click", function() {
+// 	var boxed_switch = jQuery(this).attr('value');
 
-	if(boxed_switch == 'dark') {
-		jQuery("body").removeClass('dark');
-		jQuery("body").addClass('dark');
-		createCookie("is_dark", 'true', 365);
-	} else {
-		jQuery("body").removeClass('dark');
-		createCookie("is_dark", '', -1);
-		jQuery('body').removeClass('transparent');
-	}
-});
+// 	if(boxed_switch == 'dark') {
+// 		jQuery("body").removeClass('dark');
+// 		jQuery("body").addClass('dark');
+// 		createCookie("is_dark", 'true', 365);
+// 	} else {
+// 		jQuery("body").removeClass('dark');
+// 		createCookie("is_dark", '', -1);
+// 		jQuery('body').removeClass('transparent');
+// 	}
+// });
 
 
 
