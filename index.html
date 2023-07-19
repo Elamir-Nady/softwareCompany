@@ -117,138 +117,6 @@
     <div id="switcher" class="">
       <div class="content-switcher">
         <h4>STYLE SWITCHER</h4>
-        <ul>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('blue'); document.getElementById('logo-light').src='img/styleswitcher/logos/blue.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/blue.png';"
-              title="blue"
-              class="color"
-              ><img
-                src="img/styleswitcher/blue.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('blueviolet'); document.getElementById('logo-light').src='img/styleswitcher/logos/blueviolet.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/blueviolet.png';"
-              title="blueviolet"
-              class="color"
-              ><img
-                src="img/styleswitcher/blueviolet.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('goldenrod'); document.getElementById('logo-light').src='img/styleswitcher/logos/goldenrod.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/goldenrod.png';"
-              title="goldenrod"
-              class="color"
-              ><img
-                src="img/styleswitcher/goldenrod.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('green'); document.getElementById('logo-light').src='img/styleswitcher/logos/green.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/green.png';"
-              title="green"
-              class="color"
-              ><img
-                src="img/styleswitcher/green.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('magenta'); document.getElementById('logo-light').src='img/styleswitcher/logos/magenta.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/magenta.png';"
-              title="magenta"
-              class="color"
-              ><img
-                src="img/styleswitcher/magenta.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('orange'); document.getElementById('logo-light').src='img/styleswitcher/logos/orange.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/orange.png';"
-              title="orange"
-              class="color"
-              ><img
-                src="img/styleswitcher/orange.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('purple'); document.getElementById('logo-light').src='img/styleswitcher/logos/purple.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/purple.png';"
-              title="purple"
-              class="color"
-              ><img
-                src="img/styleswitcher/purple.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('red'); document.getElementById('logo-light').src='img/styleswitcher/logos/red.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/red.png';"
-              title="red"
-              class="color"
-              ><img
-                src="img/styleswitcher/red.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('yellow'); document.getElementById('logo-light').src='img/styleswitcher/logos/yellow.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/yellow.png';"
-              title="yellow"
-              class="color"
-              ><img
-                src="img/styleswitcher/yellow.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="#"
-              onclick="setActiveStyleSheet('yellowgreen'); document.getElementById('logo-light').src='img/styleswitcher/logos/yellowgreen.png'; document.getElementById('logo-dark').src='img/styleswitcher/logos/logos-dark/yellowgreen.png';"
-              title="yellowgreen"
-              class="color"
-              ><img
-                src="img/styleswitcher/yellowgreen.png"
-                alt=""
-                width="30"
-                height="30"
-            /></a>
-          </li>
-        </ul>
 
         <p>BODY SKIN</p>
 
@@ -273,14 +141,13 @@
           />
           Dark</label
         >
+        <div id="hideSwitcher">&times;</div>
       </div>
     </div>
 
-    <!-- 
     <div id="showSwitcher" class="styleSecondColor">
       <i class="fa fa-cog fa-spin"></i>
     </div>
-     -->
 
     <!-- Live Style Switcher Ends - demo only -->
     <!-- Page Wrapper Starts -->
@@ -342,10 +209,10 @@
             >
               <!-- Main Menu Starts -->
               <ul class="nav navbar-nav" id="main-navigation">
-                <li class="active">
+                <li>
                   <a href="index.html"><i class="fa fa-home"></i> Home</a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="about.html"><i class="fa fa-user"></i> About Us</a>
                 </li>
                 <li class="dropdown">
@@ -355,70 +222,32 @@
                   ></a>
                   <ul class="dropdown-menu" role="menu">
                     <li>
-                      <a href="portfolio-2-columns.html">Portfolio 2 Columns</a>
+                      <a href="portfolio-1.html"
+                        >Mobile App & Web development</a
+                      >
                     </li>
                     <li>
-                      <a href="portfolio-3-columns.html">Portfolio 3 Columns</a>
+                      <a href="portfolio-2.html"
+                        >Custom Software Development</a
+                      >
                     </li>
                     <li>
-                      <a href="portfolio-4-columns.html">Portfolio 4 Columns</a>
+                      <a href="portfolio-3.html">Integration Services</a>
                     </li>
-                    <li><a href="image-project.html">Image Project</a></li>
-                    <li><a href="slider-project.html">Slider Project</a></li>
-                    <li><a href="gallery-project.html">Gallery Project</a></li>
-                    <li><a href="video-project.html">Video project</a></li>
-                    <li><a href="youtube-project.html">youtube Project</a></li>
-                    <li><a href="vimeo-project.html">Vimeo Project</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    ><i class="fa fa-edit"></i> Blog
-                    <i class="fa fa-angle-down icon-angle"></i
-                  ></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
-                    <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
                     <li>
-                      <a href="blog-grid-no-sidebar.html">Grid No Sidebar</a>
+                      <a href="portfolio-4.html">Software Consulting</a>
                     </li>
-                    <li><a href="blog-post.html">Single Post</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                    ><i class="fa fa-file-text-o"></i> pages
-                    <i class="fa fa-angle-down icon-angle"></i
-                  ></a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li><a href="register.html">Register page</a></li>
-                    <li><a href="login.html">Login page</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="shopping-cart.html">Shopping cart</a></li>
                     <li>
-                      <a href="shopping-checkout.html">shopping checkout</a>
-                    </li>
-                    <li><a href="coming-soon.html">Coming Soon</a></li>
-                    <li><a href="404.html">404 Page</a></li>
-                    <li><a href="503.html">Server Error Page</a></li>
-                    <li><a href="faq.html">FAQ page</a></li>
-                    <li>
-                      <a href="terms-of-services.html">Terms of Services</a>
+                      <a href="portfolio-5.html">Maintenance & Support</a>
                     </li>
                   </ul>
                 </li>
+
                 <li>
                   <a href="contact.html"
                     ><i class="fa fa-envelope"></i> Contact</a
                   >
                 </li>
-                <!-- Cart Icon Starts -->
-                <li class="cart hidden-xs hidden-sm">
-                  <a href="shopping-cart.html"
-                    ><i class="fa fa-shopping-cart"></i
-                  ></a>
-                </li>
-                <!-- Cart Icon Starts -->
                 <!-- Search Icon Starts -->
                 <li class="search hidden-xs hidden-sm">
                   <button id="search-button" class="fa fa-search"></button>
@@ -929,44 +758,46 @@
               <h3 class="title-about">WE ARE <strong>Jwdaa</strong></h3>
               <hr />
               <p>
-                We are a leading company sit amet, consectetur adipisicing elit.
-                Minus obcaecati pariatur officiis molestias eveniet harum
-                laudantium obcaecati pariatur officiis molestias eveniet harum
-                laudantium sed optio iste.
+                We are here to make it easier by offering our business
+                consultation and tech experience. Delivering high-quality
+                software solutions that are tailored to the specific
+                requirements of our clients is the collaborative effort of our
+                team of talented software engineers, designers, and project
+                managers.
               </p>
               <!-- Tabs Heading Starts -->
               <ul class="nav nav-tabs">
                 <li class="active">
                   <a data-toggle="tab" href="#menu1">Our Mission</a>
                 </li>
-                <li><a data-toggle="tab" href="#menu2">Our advantages</a></li>
-                <li><a data-toggle="tab" href="#menu3">Our guarantees</a></li>
+                <li><a data-toggle="tab" href="#menu2">Our Vision</a></li>
+                <li><a data-toggle="tab" href="#menu3">Our Goal</a></li>
               </ul>
               <!-- Tabs Heading Ends -->
               <!-- Tabs Content Starts -->
               <div class="tab-content">
                 <div id="menu1" class="tab-pane fade in active">
                   <p>
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    Tech is one of the main tools that a business needs in
+                    penetrating new markets and expanding their horizons. We aim
+                    to enable businesses in an efficient & sustainable manner.
                   </p>
                 </div>
                 <div id="menu2" class="tab-pane fade">
                   <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur.
+                    We believe that every business is unique and understanding
+                    their goals will allow is to enable those organizations in
+                    their innovation journey.
                   </p>
                 </div>
                 <div id="menu3" class="tab-pane fade">
                   <p>
-                    Laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                    irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                    cupidatat non proident, sunt in culpa qui officia
+                    Our goal is to give our clients measurable value by offering
+                    creative and economical software development services. At
+                    Jwdaa, we think that effective software development demands
+                    constant communication and teamwork throughout the
+                    development process, as well as a thorough understanding of
+                    the business needs of our clients.
                   </p>
                 </div>
               </div>
@@ -1078,17 +909,17 @@
               <!-- Service Item Cover Starts -->
               <span
                 class="services-box-item-cover fa fa-anchor"
-                data-headline="Featured Services"
+                data-headline="Mobile App & Web development"
               ></span>
               <!-- Service Item Cover Ends -->
               <!-- Service Item Content Starts -->
               <div class="services-box-item-content fa fa-anchor">
-                <h2>Featured Services</h2>
+                <h2>Mobile App & Web development</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu.
+                  At Jwdaa, we specialize in providing web and mobile app
+                  development services that aid businesses in connecting with
+                  their target audiences and having meaningful interactions with
+                  them....
                 </p>
               </div>
               <!-- Service Item Content Ends -->
@@ -1100,17 +931,17 @@
               <!-- Service Item Cover Starts -->
               <span
                 class="services-box-item-cover fa fa-comments-o"
-                data-headline="Custom Design"
+                data-headline="Custom Software Development"
               ></span>
               <!-- Service Item Cover Ends -->
               <!-- Service Item Content Starts -->
               <div class="services-box-item-content fa fa-comments-o">
-                <h2>Custom Design</h2>
+                <h2>Custom Software Development</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu.
+                  We specialize in providing custom software development
+                  services that are suited to the requirements of your company.
+                  We have the skills to realize your vision and achieve it along
+                  side you...
                 </p>
               </div>
               <!-- Service Item Content Ends -->
@@ -1122,16 +953,16 @@
               <!-- Service Item Cover Starts -->
               <span
                 class="services-box-item-cover fa fa-support"
-                data-headline="Technical Support"
+                data-headline="Integration Services"
               ></span>
               <!-- Service Item Cover Ends -->
               <div class="services-box-item-content fa fa-support">
-                <h2>Technical Support</h2>
+                <h2>Integration Services</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu.
+                  We are aware that many companies manage their operations using
+                  a variety of applications. These programmes can be integrated
+                  to boost productivity, eliminate errors, and streamline
+                  procedures....
                 </p>
               </div>
             </div>
@@ -1142,17 +973,17 @@
               <!-- Service Item Cover Starts -->
               <span
                 class="services-box-item-cover fa fa-cogs"
-                data-headline="Responsive Design"
+                data-headline="Software Consulting"
               ></span>
               <!-- Service Item Cover Ends -->
               <!-- Service Item Content Starts -->
               <div class="services-box-item-content fa fa-cogs">
-                <h2>Responsive Design</h2>
+                <h2>Software Consulting</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu.
+                  We provide software consulting services to assist companies of
+                  all sizes and sectors in selecting their software solutions.
+                  Our team of professionals has years of expertise in technology
+                  consulting, project management,
                 </p>
               </div>
               <!-- Service Item Content Ends -->
@@ -1164,17 +995,16 @@
               <!-- Service Item Cover Starts -->
               <span
                 class="services-box-item-cover fa fa-file-pdf-o"
-                data-headline="Well Documented"
+                data-headline="Maintenance & Support"
               ></span>
               <!-- Service Item Cover Ends -->
               <!-- Service Item Content Starts -->
               <div class="services-box-item-content fa fa-file-pdf-o">
-                <h2>Well Documented</h2>
+                <h2>Maintenance & Support</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu.
+                  We are aware of how important software maintenance and support
+                  are to your company's success. We provide thorough maintenance
+                  and support services as a result, ensuring that your software
                 </p>
               </div>
               <!-- Service Item Content Ends -->
@@ -2169,7 +1999,6 @@
                 <li>Monthly Free Files</li>
                 <li>Daily Newsletter</li>
               </ul>
-              <a class="custom-button" href="register.html">register now</a>
             </div>
             <!-- Call To Action Ends -->
           </div>
@@ -2241,32 +2070,39 @@
         <!-- Footer Top Area Starts -->
         <div class="container top-footer">
           <div class="row">
+            <!-- Footer Top Area Starts -->
+        <div class="container top-footer">
+          <div class="row">
             <!-- Footer Widget Starts -->
             <div class="col-xs-6 col-sm-4 col-md-2">
               <h4>Jwdaa</h4>
               <div class="menu">
                 <ul>
-                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index-kenburns.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
-                  <li><a href="pricing.html">pricing</a></li>
-                  <li><a href="portfolio-3-columns.html">portfolio</a></li>
-                  <li><a href="blog-right-sidebar.html">Blog</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
                 </ul>
               </div>
             </div>
             <!-- Footer Widget Ends -->
             <!-- Footer Widget Starts -->
             <div class="col-xs-6 col-sm-4 col-md-2">
-              <h4>Support</h4>
+              <h4>portfolio</h4>
               <div class="menu">
                 <ul>
-                  <li><a href="contact.html">Contact</a></li>
-                  <li><a href="faq.html">FAQ</a></li>
                   <li>
-                    <a href="terms-of-services.html">Terms of Services</a>
+                    <a href="portfolio-1.html">Mobile App & Web development</a>
                   </li>
-                  <li><a href="register.html">Register</a></li>
-                  <li><a href="login.html">Login</a></li>
+
+                  <li>
+                    <a href="portfolio-2.html"
+                      >Custom Software Development</a
+                    >
+                  </li>
+                  <li><a href="portfolio-3.html">Integration Services</a></li>
+                  <li><a href="portfolio-4.html">Software Consulting</a></li>
+                  <li><a href="portfolio-5.html">Maintenance & Support</a></li>
                 </ul>
               </div>
             </div>
